@@ -14,12 +14,12 @@ categories = ["memory-management", "no-std"]
 
 [features]
 alloc = []
-std = ["alloc", "dep:parking_lot", "dep:allocator-api2"]
+std = ["alloc", "dep:parking_lot"]
 default = ["std"]
 nightly = ["allocator-api2/nightly", "allocator-api2-tests/nightly", "bumpalo/allocator_api", "blink-alloc/nightly"]
 
 [dependencies]
-allocator-api2 = { version = "0.2.13", optional = true }
+allocator-api2 = { version = "0.2.16"}
 parking_lot = { version = "0.12", optional = true }
 
 [dev-dependencies]
